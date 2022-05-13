@@ -30,7 +30,7 @@
 |                    | IDE          |
 | ------------------ | ------------ |
 | :white_check_mark: | VSCode       |
-|                    | VisualStudio |
-|                    | Eclipse      |
-|                    | Notepad++    |
-|                    | IntelliJ     |
+| :white_check_mark: | VisualStudio |
+| :white_check_mark: | Eclipse      |
+| :white_check_mark: | Notepad++    |
+| :white_check_mark: | IntelliJ     |
