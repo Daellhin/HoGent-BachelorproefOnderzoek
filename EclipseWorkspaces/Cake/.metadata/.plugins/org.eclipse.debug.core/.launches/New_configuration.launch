@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.acute.dotnetrun.DotnetRunDelegate">
+    <stringAttribute key="PROJECT_ARGUMENTS" value=""/>
+    <booleanAttribute key="PROJECT_BUILD" value="true"/>
+    <stringAttribute key="PROJECT_CONFIGURATION" value="Debug"/>
+    <stringAttribute key="PROJECT_FOLDER" value="C:\Users\lorin\git\cake"/>
+    <stringAttribute key="PROJECT_FRAMEWORK" value=""/>
+</launchConfiguration>

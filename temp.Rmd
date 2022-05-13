@@ -1,0 +1,263 @@
+---
+title: "Bachelorproef dataverwerking"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Remark:** Before running this code in RStudio, first do (from the menu): *Session > Set Working Directory > To Source File Location*. This allows loading the .csv file from the current directory.
+
+## Load data
+```{r}
+# Load data from csv
+startup <- read.csv("./CSV/Combined-StartupResults.csv", sep = ",")
+startupCake <- startup[startup$Project == 'Cake',]
+startupMindustry <- startup[startup$Project == 'Mindustry',]    
+
+search <- read.csv("./CSV/Combined-SearchResults.csv", sep = ",")
+searchCake <- search[search$Project == 'Cake',]
+searchMindustry <- search[search$Project == 'Mindustry',]   
+
+build <- read.csv("./CSV/Combined-BuildResults.csv", sep = ",")
+buildCake <- build[build$Project == 'Cake',]
+
+profile <- read.csv("./CSV/Combined-ProfileResults.csv", sep = ",")
+profileCake <- profile[profile$Project == 'Cake',]
+profileMindustry <- profile[profile$Project == 'Mindustry',]
+```
+
+## Startup
+```{r}
+startupVsCodeCake <- startupCake[startupCake$Program == 'VSCode',]
+startupVsCodeMindustry <- startupMindustry[startupMindustry$Program == 'VSCode',]
+
+startupVisualStudioCake <- startupCake[startupCake$Program == 'VisualStudio',]
+
+startupEclipseCake <- startupCake[startupCake$Program == 'Eclipse',]
+startupEclipseMindustry <- startupMindustry[startupMindustry$Program == 'Eclipse',]
+
+startupNotepadCake <- startupCake[startupCake$Program == 'Notepad',]
+startupNotepadMindustry <- startupMindustry[startupMindustry$Program == 'Notepad',]
+
+startupIntelliJMindustry <- startupMindustry[startupMindustry$Program == 'IntelliJ',]
+```
+
+### Startup Cake
+```{r}
+summary(startupVsCodeCake$StartupTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(startupVsCodeCake$StartupTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(startupVisualStudioCake$StartupTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(startupVisualStudioCake$StartupTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(startupEclipseCake$StartupTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(startupEclipseCake$StartupTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(startupNotepadCake$StartupTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(startupNotepadCake$StartupTime.ms.)       # standaardafwijking (formule voor steekproef)
+```
+
+### Startup Mindustry
+```{r}
+summary(startupVsCodeMindustry$StartupTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(startupVsCodeMindustry$StartupTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(startupEclipseMindustry$StartupTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(startupEclipseMindustry$StartupTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(startupNotepadMindustry$StartupTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(startupNotepadMindustry$StartupTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(startupIntelliJMindustry$StartupTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(startupIntelliJMindustry$StartupTime.ms.)       # standaardafwijking (formule voor steekproef)
+```
+
+## Search
+```{r}
+searchVsCodeCake <- searchCake[searchCake$Program == 'VSCode',]
+searchVsCodeMindustry <- searchMindustry[searchMindustry$Program == 'VSCode',]
+
+searchVisualStudioCake <- searchCake[searchCake$Program == 'VisualStudio',]
+
+searchEclipseCake <- searchCake[searchCake$Program == 'Eclipse',]
+searchEclipseMindustry <- searchMindustry[searchMindustry$Program == 'Eclipse',]
+
+searchNotepadCake <- searchCake[searchCake$Program == 'Notepad',]
+searchNotepadMindustry <- searchMindustry[searchMindustry$Program == 'Notepad',]
+
+searchIntelliJMindustry <- searchMindustry[searchMindustry$Program == 'IntelliJ',]
+```
+
+### Search Cake
+```{r}
+summary(searchVsCodeCake$SearchTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(searchVsCodeCake$SearchTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(searchVisualStudioCake$SearchTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(searchVisualStudioCake$SearchTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(searchEclipseCake$SearchTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(searchEclipseCake$SearchTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(searchNotepadCake$SearchTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(searchNotepadCake$SearchTime.ms.)       # standaardafwijking (formule voor steekproef)
+```
+
+### Search Mindustry
+```{r}
+summary(searchVsCodeMindustry$SearchTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(searchVsCodeMindustry$SearchTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(searchEclipseMindustry$SearchTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(searchEclipseMindustry$SearchTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(searchNotepadMindustry$SearchTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(searchNotepadMindustry$SearchTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(searchIntelliJMindustry$SearchTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(searchIntelliJMindustry$SearchTime.ms.)       # standaardafwijking (formule voor steekproef)
+```
+
+## Build
+```{r}
+buildVsCodeCake <- buildCake[buildCake$Program == 'VSCode',]
+
+buildVisualStudioCake <- buildCake[buildCake$Program == 'VisualStudio',]
+
+buildEclipseCake <- buildCake[buildCake$Program == 'Eclipse',]
+```
+
+### Build Cake
+```{r}
+summary(buildVsCodeCake$BuildTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(buildVsCodeCake$BuildTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(buildVisualStudioCake$BuildTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(buildVisualStudioCake$BuildTime.ms.)       # standaardafwijking (formule voor steekproef)
+
+summary(buildEclipseCake$BuildTime.ms.)  # min, max, kwartielen, gemiddelde
+sd(buildEclipseCake$BuildTime.ms.)       # standaardafwijking (formule voor steekproef)
+```
+
+## Profile
+```{r}
+profileVsCodeCake <- profileCake[profileCake$Program == 'VSCode',]
+profileVsCodeMindustry <- profileMindustry[profileMindustry$Program == 'VSCode',]
+
+profileVisualStudioCake <- profileCake[profileCake$Program == 'VisualStudio',]
+
+profileEclipseCake <- profileCake[profileCake$Program == 'Eclipse',]
+profileEclipseMindustry <- profileMindustry[profileMindustry$Program == 'Eclipse',]
+
+profileNotepadCake <- profileCake[profileCake$Program == 'Notepad',]
+profileNotepadMindustry <- profileMindustry[profileMindustry$Program == 'Notepad',]
+
+profileIntelliJMindustry <- profileMindustry[profileMindustry$Program == 'IntelliJ',]
+```
+
+### Profile Cake CPU
+```{r}
+summary(profileVsCodeCake$CPU...)  # min, max, kwartielen, gemiddelde
+sd(profileVsCodeCake$CPU...)       # standaardafwijking (formule voor steekproef)
+
+summary(profileVisualStudioCake$CPU...)  # min, max, kwartielen, gemiddelde
+sd(profileVisualStudioCake$CPU...)       # standaardafwijking (formule voor steekproef)
+
+summary(profileEclipseCake$CPU...)  # min, max, kwartielen, gemiddelde
+sd(profileEclipseCake$CPU...)       # standaardafwijking (formule voor steekproef)
+
+summary(profileNotepadCake$CPU...)  # min, max, kwartielen, gemiddelde
+sd(profileNotepadCake$CPU...)       # standaardafwijking (formule voor steekproef)
+```
+
+### Profile Mindustry CPU
+```{r}
+summary(profileVsCodeMindustry$CPU...)  # min, max, kwartielen, gemiddelde
+sd(profileVsCodeMindustry$CPU...)       # standaardafwijking (formule voor steekproef)
+
+summary(profileEclipseMindustry$CPU...)  # min, max, kwartielen, gemiddelde
+sd(profileEclipseMindustry$CPU...)       # standaardafwijking (formule voor steekproef)
+
+summary(profileNotepadCake$CPU...)  # min, max, kwartielen, gemiddelde
+sd(profileNotepadCake$CPU...)       # standaardafwijking (formule voor steekproef)
+
+summary(profileIntelliJMindustry$CPU...)  # min, max, kwartielen, gemiddelde
+sd(profileIntelliJMindustry$CPU...)       # standaardafwijking (formule voor steekproef)
+```
+
+### Profile Cake Ram
+```{r}
+summary(profileVsCodeCake$RAM.MB.)  # min, max, kwartielen, gemiddelde
+sd(profileVsCodeCake$RAM.MB.)       # standaardafwijking (formule voor steekproef)
+
+summary(profileVisualStudioCake$RAM.MB.)  # min, max, kwartielen, gemiddelde
+sd(profileVisualStudioCake$RAM.MB.)       # standaardafwijking (formule voor steekproef)
+
+summary(profileEclipseCake$RAM.MB.)  # min, max, kwartielen, gemiddelde
+sd(profileEclipseCake$RAM.MB.)       # standaardafwijking (formule voor steekproef)
+
+summary(profileNotepadCake$RAM.MB.)  # min, max, kwartielen, gemiddelde
+sd(profileNotepadCake$RAM.MB.)       # standaardafwijking (formule voor steekproef)
+```
+
+### Profile Mindustry Ram
+```{r}
+summary(profileVsCodeMindustry$RAM.MB.)  # min, max, kwartielen, gemiddelde
+sd(profileVsCodeMindustry$RAM.MB.)       # standaardafwijking (formule voor steekproef)
+
+summary(profileEclipseMindustry$RAM.MB.)  # min, max, kwartielen, gemiddelde
+sd(profileEclipseMindustry$RAM.MB.)       # standaardafwijking (formule voor steekproef)
+
+summary(profileNotepadMindustry$RAM.MB.)  # min, max, kwartielen, gemiddelde
+sd(profileNotepadMindustry$RAM.MB.)       # standaardafwijking (formule voor steekproef)
+
+summary(profileIntelliJMindustry$RAM.MB.)  # min, max, kwartielen, gemiddelde
+sd(profileIntelliJMindustry$RAM.MB.)       # standaardafwijking (formule voor steekproef)
+```
+
+## Combined Averages
+## Startup
+```{r}
+mean(append(startupVsCodeCake$StartupTime.ms., startupVsCodeMindustry$StartupTime.ms.))  
+mean(startupVisualStudioCake$StartupTime.ms.)  
+mean(append(startupEclipseCake$StartupTime.ms., startupEclipseMindustry$StartupTime.ms.))
+mean(append(startupNotepadCake$StartupTime.ms., startupNotepadMindustry$StartupTime.ms.))
+mean(startupIntelliJMindustry$StartupTime.ms.)  
+```
+
+### Search
+```{r}
+mean(append(searchVsCodeCake$SearchTime.ms., searchVsCodeMindustry$SearchTime.ms.))  
+mean(searchVisualStudioCake$SearchTime.ms.)  
+mean(append(searchEclipseCake$SearchTime.ms., searchEclipseMindustry$SearchTime.ms.))
+mean(append(searchNotepadCake$SearchTime.ms., searchNotepadMindustry$SearchTime.ms.))
+mean(searchIntelliJMindustry$SearchTime.ms.)  
+```
+
+#### Build
+```{r}
+mean(buildVsCodeCake$BuildTime.ms.)  
+mean(buildVisualStudioCake$BuildTime.ms.)  
+mean(buildEclipseCake$BuildTime.ms.)
+```
+
+### CPU
+```{r}
+mean(append(profileVsCodeCake$CPU..., profileVsCodeMindustry$CPU...))  
+mean(profileVisualStudioCake$CPU...)  
+mean(append(profileEclipseCake$CPU..., profileEclipseMindustry$CPU...))
+mean(append(profileNotepadCake$CPU..., profileNotepadMindustry$CPU...))
+mean(profileIntelliJMindustry$CPU...)  
+```
+
+### RAM
+```{r}
+mean(append(profileVsCodeCake$RAM.MB., profileVsCodeMindustry$RAM.MB.))  
+mean(profileVisualStudioCake$RAM.MB.)  
+mean(append(profileEclipseCake$RAM.MB., profileEclipseMindustry$RAM.MB.))
+mean(append(profileNotepadCake$RAM.MB., profileNotepadMindustry$RAM.MB.))
+mean(profileIntelliJMindustry$RAM.MB.)  
+```
+

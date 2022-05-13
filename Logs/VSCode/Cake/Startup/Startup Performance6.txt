@@ -1,0 +1,276 @@
+## System Info
+
+* Code: 1.66.2 (dfd34e8260c270da74b5c2d86d61aee4b6d56977)
+* OS: win32(10.0.22610)
+* CPUs: AMD Ryzen 7 4800H with Radeon Graphics         (16 x 2895)
+* Memory(System): 15.36 GB(6.67GB free)
+* Memory(Process): 199.95 MB working set(163.36MB private, 0.27MB shared)
+* VM(likelihood): 0%
+* Initial Startup: true
+* Has 0 other windows
+* Screen Reader Active: false
+* Empty Workspace: false
+
+## Performance Marks
+
+| What                                                            | Duration | Process                   | Info                                                        |
+| --------------------------------------------------------------- | -------- | ------------------------- | ----------------------------------------------------------- |
+| start => app.isReady                                            | 110      | [main]                    | initial startup: true                                       |
+| nls:start => nls:end                                            | 1        | [main]                    | initial startup: true                                       |
+| require(main.bundle.js)                                         | 63       | [main]                    | initial startup: true                                       |
+| start crash reporter                                            | 30       | [main]                    | initial startup: true                                       |
+| serve main IPC handle                                           | 1        | [main]                    | initial startup: true                                       |
+| create window                                                   | 65       | [main]                    | initial startup: true, state: 1ms, widget: 20ms, show: 44ms |
+| app.isReady => window.loadUrl()                                 | 195      | [main]                    | initial startup: true                                       |
+| window.loadUrl() => begin to require(workbench.desktop.main.js) | 232      | [main->renderer]          | NewWindow                                                   |
+| require(workbench.desktop.main.js)                              | 312      | [renderer]                | cached data: YES, node_modules took 0ms                     |
+| wait for window config                                          | 0        | [renderer]                | -                                                           |
+| init storage (global & workspace)                               | 14       | [renderer]                | -                                                           |
+| init workspace service                                          | 41       | [renderer]                | -                                                           |
+| register extensions & spawn extension host                      | 282      | [renderer]                | -                                                           |
+| restore viewlet                                                 | 24       | [renderer]                | workbench.view.explorer                                     |
+| restore panel                                                   | 0        | [renderer]                | -                                                           |
+| restore & resolve visible editors                               | 52       | [renderer]                | 0:                                                          |
+| overall workbench load                                          | 280      | [renderer]                | -                                                           |
+| workbench ready                                                 | 1175     | [main->renderer]          | -                                                           |
+| renderer ready                                                  | 646      | [renderer]                | -                                                           |
+| shared process connection ready                                 | 0        | [renderer->sharedprocess] | -                                                           |
+| extensions registered                                           | 1540     | [renderer]                | -                                                           |
+
+## Extension Activation Stats
+
+| Extension                               | Eager | Load Code | Call Activate | Finish Activate | Event                                                                                 | By                                      |
+| --------------------------------------- | ----- | --------- | ------------- | --------------- | ------------------------------------------------------------------------------------- | --------------------------------------- |
+| vscode.debug-auto-launch                | true  | 6         | 0             | 182             | *                                                                                     | vscode.debug-auto-launch                |
+| vscode.git                              | true  | 19        | 5             | 69              | *                                                                                     | vscode.git                              |
+| vscode.git-base                         | true  | 5         | 0             | 182             | *                                                                                     | vscode.git                              |
+| vscode.github                           | true  | 7         | 0             | 3               | *                                                                                     | vscode.github                           |
+| vscode.ipynb                            | true  | 4         | 1             | 181             | *                                                                                     | vscode.ipynb                            |
+| albert.TabOut                           | true  | 7         | 0             | 181             | *                                                                                     | albert.TabOut                           |
+| eamodio.toggle-excluded-files           | true  | 3         | 2             | 179             | *                                                                                     | eamodio.toggle-excluded-files           |
+| christian-kohler.path-intellisense      | true  | 40        | 0             | 179             | *                                                                                     | christian-kohler.path-intellisense      |
+| ecmel.vscode-html-css                   | true  | 20        | 1             | 178             | *                                                                                     | ecmel.vscode-html-css                   |
+| formulahendry.auto-close-tag            | true  | 4         | 0             | 178             | *                                                                                     | formulahendry.auto-close-tag            |
+| formulahendry.auto-rename-tag           | true  | 11        | 3             | 471             | *                                                                                     | formulahendry.auto-rename-tag           |
+| HaaLeo.timing                           | true  | 13        | 16            | 159             | *                                                                                     | HaaLeo.timing                           |
+| hbenl.vscode-test-explorer              | true  | 33        | 2             | 1               | *                                                                                     | hbenl.vscode-test-explorer              |
+| mhutchie.git-graph                      | true  | 36        | 5             | 199             | *                                                                                     | mhutchie.git-graph                      |
+| michelemelluso.gitignore                | true  | 2         | 0             | 153             | *                                                                                     | michelemelluso.gitignore                |
+| mightycoco.fsdeploy                     | true  | 166       | 1             | 152             | *                                                                                     | mightycoco.fsdeploy                     |
+| ms-dotnettools.csharp                   | true  | 32        | 2             | 124             | workspaceContains:**/*.{csproj,sln,slnf,csx,cake}                                     | ms-dotnettools.csharp                   |
+| ms-dotnettools.vscode-dotnet-pack       | true  | 5         | 0             | 76              | workspaceContains:*.csproj,*.sln,*.csx,*.cake,**/*.csproj,**/*.sln,**/*.csx,**/*.cake | ms-dotnettools.vscode-dotnet-pack       |
+| ms-vscode.test-adapter-converter        | true  | 6         | 0             | 158             | *                                                                                     | hbenl.vscode-test-explorer              |
+| WakaTime.vscode-wakatime                | true  | 22        | 0             | 152             | *                                                                                     | WakaTime.vscode-wakatime                |
+| WallabyJs.quokka-vscode                 | true  | 2         | 151           | 4               | *                                                                                     | WallabyJs.quokka-vscode                 |
+| vscode.configuration-editing            | false | 6         | 1             | 3               | onLanguage:jsonc                                                                      | vscode.configuration-editing            |
+| vscode.emmet                            | false | 10        | 2             | 35              | onStartupFinished                                                                     | vscode.emmet                            |
+| vscode.extension-editing                | false | 20        | 0             | 44              | onLanguage:markdown                                                                   | vscode.extension-editing                |
+| vscode.github-authentication            | false | 13        | 0             | 1               | onAuthenticationRequest:github                                                        | vscode.github-authentication            |
+| vscode.json-language-features           | false | 15        | 0             | 23              | onLanguage:jsonc                                                                      | vscode.json-language-features           |
+| vscode.markdown-language-features       | false | 64        | 1             | 43              | onLanguage:markdown                                                                   | vscode.markdown-language-features       |
+| vscode.markdown-math                    | false | 7         | 0             | 0               | api                                                                                   | yzhang.markdown-all-in-one              |
+| vscode.merge-conflict                   | false | 4         | 1             | 34              | onStartupFinished                                                                     | vscode.merge-conflict                   |
+| vscode.microsoft-authentication         | false | 21        | 1             | 321             | onAuthenticationRequest:microsoft                                                     | vscode.microsoft-authentication         |
+| ms-vscode-remote.remote-wsl-recommender | false | 18        | 10            | 25              | onStartupFinished                                                                     | ms-vscode-remote.remote-wsl-recommender |
+| vscode.typescript-language-features     | false | 46        | 3             | 3               | onLanguage:jsonc                                                                      | vscode.typescript-language-features     |
+| dbaeumer.vscode-eslint                  | false | 38        | 0             | 24              | onStartupFinished                                                                     | dbaeumer.vscode-eslint                  |
+| dsznajder.es7-react-js-snippets         | false | 306       | 0             | 24              | onStartupFinished                                                                     | dsznajder.es7-react-js-snippets         |
+| formulahendry.code-runner               | false | 47        | 2             | 22              | onStartupFinished                                                                     | formulahendry.code-runner               |
+| Gruntfuggly.todo-tree                   | false | 13        | 21            | 1               | onStartupFinished                                                                     | Gruntfuggly.todo-tree                   |
+| koehlma.markdown-math                   | false | 2         | 0             | 0               | api                                                                                   | yzhang.markdown-all-in-one              |
+| PKief.material-icon-theme               | false | 8         | 0             | 17              | onStartupFinished                                                                     | PKief.material-icon-theme               |
+| ritwickdey.LiveServer                   | false | 258       | 0             | 2               | onStartupFinished                                                                     | ritwickdey.LiveServer                   |
+| yzhang.markdown-all-in-one              | false | 35        | 43            | 0               | onLanguage:markdown                                                                   | yzhang.markdown-all-in-one              |
+
+## Raw Perf Marks: main
+
+```
+Name	Timestamp	Delta	Total
+code/timeOrigin	1651505946482	0	0
+code/didStartMain	1651505946563	81	81
+code/willStartCrashReporter	1651505946582	19	100
+code/didStartCrashReporter	1651505946612	30	130
+code/mainAppReady	1651505946673	61	191
+code/willGenerateNls	1651505946675	2	193
+code/didGenerateNls	1651505946676	1	194
+code/willLoadMainBundle	1651505946682	6	200
+code/fork/willLoadCode	1651505946697	15	215
+code/registerFilesystem/file	1651505946743	46	261
+code/didLoadMainBundle	1651505946745	2	263
+code/willStartMainServer	1651505946750	5	268
+code/didStartMainServer	1651505946751	1	269
+code/willCreateCodeWindow	1651505946798	47	316
+code/willRestoreCodeWindowState	1651505946798	0	316
+code/didRestoreCodeWindowState	1651505946799	1	317
+code/willCreateCodeBrowserWindow	1651505946799	0	317
+code/didCreateCodeBrowserWindow	1651505946819	20	337
+code/willMaximizeCodeWindow	1651505946819	0	337
+code/didMaximizeCodeWindow	1651505946863	44	381
+code/didCreateCodeWindow	1651505946863	0	381
+code/willOpenNewWindow	1651505946868	5	386
+```
+## Raw Perf Marks: renderer
+
+```
+Name	Timestamp	Delta	Total
+code/timeOrigin	1651505946876	0	0
+code/didStartRenderer	1651505947092	216	216
+code/willWaitForWindowConfig	1651505947093	1	217
+code/didWaitForWindowConfig	1651505947093	0	217
+code/willShowPartsSplash	1651505947093	0	217
+code/didShowPartsSplash	1651505947094	1	218
+code/willLoadWorkbenchMain	1651505947100	6	224
+code/didLoadWorkbenchMain	1651505947412	312	536
+code/registerFilesystem/file	1651505947413	1	537
+code/registerFilesystem/vscode-userdata	1651505947413	0	537
+code/willInitWorkspaceService	1651505947414	1	538
+code/willInitStorage	1651505947415	1	539
+code/didInitStorage	1651505947429	14	553
+code/willInitUserConfiguration	1651505947432	3	556
+code/didInitUserConfiguration	1651505947438	6	562
+code/willInitWorkspaceConfiguration	1651505947438	0	562
+code/didInitWorkspaceConfiguration	1651505947455	17	579
+code/didInitWorkspaceService	1651505947455	0	579
+code/willStartWorkbench	1651505947458	3	582
+code/LifecyclePhase/Ready	1651505947516	58	640
+code/registerFilesystem/trustedDomains	1651505947536	20	660
+code/registerFilesystem/vscode-local-history	1651505947537	1	661
+code/willRestoreEditors	1651505947686	149	810
+code/willRestoreViewlet	1651505947689	3	813
+code/didRestoreViewlet	1651505947713	24	837
+code/willResolveExplorer	1651505947734	21	858
+code/didRestoreEditors	1651505947738	4	862
+code/LifecyclePhase/Restored	1651505947738	0	862
+code/didStartWorkbench	1651505947738	0	862
+code/didRemovePartsSplash	1651505947738	0	862
+code/registerFilesystem/vscode-debug-memory	1651505947743	5	867
+code/willConnectSharedProcess	1651505947761	18	885
+code/willLoadExtensions	1651505947821	60	945
+code/didResolveExplorer	1651505947883	62	1007
+code/willHandleExtensionPoints	1651505947931	48	1055
+code/didHandleExtensionPoints	1651505948098	167	1222
+code/didLoadExtensions	1651505948103	5	1227
+```
+## Raw Perf Marks: localExtHost
+
+```
+Name	Timestamp	Delta	Total
+code/timeOrigin	1651505947916	0	0
+code/fork/start	1651505948007	91	91
+code/fork/willLoadCode	1651505948035	28	119
+code/extHost/willConnectToRenderer	1651505948205	170	289
+code/extHost/didConnectToRenderer	1651505948207	2	291
+code/extHost/didWaitForInitData	1651505948386	179	470
+code/extHost/didCreateServices	1651505948402	16	486
+code/extHost/willWaitForConfig	1651505948405	3	489
+code/extHost/didWaitForConfig	1651505948447	42	531
+code/extHost/didInitAPI	1651505948519	72	603
+code/extHost/didInitProxyResolver	1651505948524	5	608
+code/extHost/ready	1651505948524	0	608
+code/extHost/willLoadExtensionCode/vscode.microsoft-authentication	1651505948535	11	619
+code/extHost/didLoadExtensionCode/vscode.microsoft-authentication	1651505948556	21	640
+code/extHost/willLoadExtensionCode/vscode.debug-auto-launch	1651505948556	0	640
+code/extHost/didLoadExtensionCode/vscode.debug-auto-launch	1651505948562	6	646
+code/extHost/willLoadExtensionCode/vscode.git-base	1651505948562	0	646
+code/extHost/didLoadExtensionCode/vscode.git-base	1651505948567	5	651
+code/extHost/willLoadExtensionCode/vscode.ipynb	1651505948568	1	652
+code/extHost/didLoadExtensionCode/vscode.ipynb	1651505948572	4	656
+code/extHost/willLoadExtensionCode/albert.TabOut	1651505948572	0	656
+code/extHost/didLoadExtensionCode/albert.TabOut	1651505948579	7	663
+code/extHost/willLoadExtensionCode/eamodio.toggle-excluded-files	1651505948580	1	664
+code/extHost/didLoadExtensionCode/eamodio.toggle-excluded-files	1651505948583	3	667
+code/extHost/willLoadExtensionCode/christian-kohler.path-intellisense	1651505948583	0	667
+code/extHost/didLoadExtensionCode/christian-kohler.path-intellisense	1651505948623	40	707
+code/extHost/willLoadExtensionCode/ecmel.vscode-html-css	1651505948623	0	707
+code/extHost/didLoadExtensionCode/ecmel.vscode-html-css	1651505948643	20	727
+code/extHost/willLoadExtensionCode/formulahendry.auto-close-tag	1651505948643	0	727
+code/extHost/didLoadExtensionCode/formulahendry.auto-close-tag	1651505948647	4	731
+code/extHost/willLoadExtensionCode/formulahendry.auto-rename-tag	1651505948647	0	731
+code/extHost/didLoadExtensionCode/formulahendry.auto-rename-tag	1651505948658	11	742
+code/extHost/willLoadExtensionCode/HaaLeo.timing	1651505948659	1	743
+code/extHost/didLoadExtensionCode/HaaLeo.timing	1651505948672	13	756
+code/extHost/willLoadExtensionCode/ms-vscode.test-adapter-converter	1651505948672	0	756
+code/extHost/didLoadExtensionCode/ms-vscode.test-adapter-converter	1651505948678	6	762
+code/extHost/willLoadExtensionCode/mhutchie.git-graph	1651505948678	0	762
+code/extHost/didLoadExtensionCode/mhutchie.git-graph	1651505948714	36	798
+code/extHost/willLoadExtensionCode/michelemelluso.gitignore	1651505948715	1	799
+code/extHost/didLoadExtensionCode/michelemelluso.gitignore	1651505948717	2	801
+code/extHost/willLoadExtensionCode/mightycoco.fsdeploy	1651505948717	0	801
+code/extHost/didLoadExtensionCode/mightycoco.fsdeploy	1651505948883	166	967
+code/extHost/willLoadExtensionCode/WakaTime.vscode-wakatime	1651505948883	0	967
+code/extHost/didLoadExtensionCode/WakaTime.vscode-wakatime	1651505948905	22	989
+code/extHost/willLoadExtensionCode/WallabyJs.quokka-vscode	1651505948905	0	989
+code/extHost/didLoadExtensionCode/WallabyJs.quokka-vscode	1651505948907	2	991
+code/extHost/willActivateExtension/vscode.microsoft-authentication	1651505948934	27	1018
+code/extHost/willActivateExtension/vscode.debug-auto-launch	1651505948935	1	1019
+code/extHost/willActivateExtension/vscode.git-base	1651505948935	0	1019
+code/extHost/willActivateExtension/vscode.ipynb	1651505948935	0	1019
+code/extHost/willActivateExtension/albert.TabOut	1651505948936	1	1020
+code/extHost/willActivateExtension/eamodio.toggle-excluded-files	1651505948936	0	1020
+code/extHost/willActivateExtension/christian-kohler.path-intellisense	1651505948938	2	1022
+code/extHost/willActivateExtension/ecmel.vscode-html-css	1651505948938	0	1022
+code/extHost/willActivateExtension/formulahendry.auto-close-tag	1651505948939	1	1023
+code/extHost/willActivateExtension/formulahendry.auto-rename-tag	1651505948939	0	1023
+code/extHost/willActivateExtension/HaaLeo.timing	1651505948942	3	1026
+code/extHost/willActivateExtension/ms-vscode.test-adapter-converter	1651505948959	17	1043
+code/extHost/willActivateExtension/mhutchie.git-graph	1651505948959	0	1043
+code/extHost/willActivateExtension/michelemelluso.gitignore	1651505948964	5	1048
+code/extHost/willActivateExtension/mightycoco.fsdeploy	1651505948964	0	1048
+code/extHost/willActivateExtension/WakaTime.vscode-wakatime	1651505948965	1	1049
+code/extHost/willActivateExtension/WallabyJs.quokka-vscode	1651505948965	0	1049
+code/extHost/didActivateExtension/vscode.debug-auto-launch	1651505949128	163	1212
+code/extHost/didActivateExtension/vscode.git-base	1651505949128	0	1212
+code/extHost/didActivateExtension/vscode.ipynb	1651505949128	0	1212
+code/extHost/didActivateExtension/albert.TabOut	1651505949128	0	1212
+code/extHost/didActivateExtension/eamodio.toggle-excluded-files	1651505949128	0	1212
+code/extHost/didActivateExtension/christian-kohler.path-intellisense	1651505949128	0	1212
+code/extHost/didActivateExtension/ecmel.vscode-html-css	1651505949128	0	1212
+code/extHost/didActivateExtension/formulahendry.auto-close-tag	1651505949128	0	1212
+code/extHost/didActivateExtension/HaaLeo.timing	1651505949128	0	1212
+code/extHost/didActivateExtension/ms-vscode.test-adapter-converter	1651505949128	0	1212
+code/extHost/didActivateExtension/michelemelluso.gitignore	1651505949128	0	1212
+code/extHost/didActivateExtension/mightycoco.fsdeploy	1651505949128	0	1212
+code/extHost/didActivateExtension/WakaTime.vscode-wakatime	1651505949128	0	1212
+code/extHost/didActivateExtension/WallabyJs.quokka-vscode	1651505949128	0	1212
+code/extHost/didActivateExtension/mhutchie.git-graph	1651505949163	35	1247
+code/extHost/willLoadExtensionCode/vscode.git	1651505949175	12	1259
+code/extHost/didLoadExtensionCode/vscode.git	1651505949193	18	1277
+code/extHost/willLoadExtensionCode/vscode.github	1651505949193	0	1277
+code/extHost/didLoadExtensionCode/vscode.github	1651505949200	7	1284
+code/extHost/willLoadExtensionCode/hbenl.vscode-test-explorer	1651505949200	0	1284
+code/extHost/didLoadExtensionCode/hbenl.vscode-test-explorer	1651505949233	33	1317
+code/extHost/didActivateExtension/vscode.microsoft-authentication	1651505949256	23	1340
+code/extHost/willActivateExtension/vscode.git	1651505949258	2	1342
+code/extHost/willActivateExtension/vscode.github	1651505949263	5	1347
+code/extHost/willActivateExtension/hbenl.vscode-test-explorer	1651505949263	0	1347
+code/extHost/didActivateExtension/vscode.github	1651505949268	5	1352
+code/extHost/didActivateExtension/hbenl.vscode-test-explorer	1651505949268	0	1352
+code/extHost/willLoadExtensionCode/ms-dotnettools.csharp	1651505949284	16	1368
+code/extHost/didLoadExtensionCode/ms-dotnettools.csharp	1651505949316	32	1400
+code/extHost/willLoadExtensionCode/ms-dotnettools.vscode-dotnet-pack	1651505949317	1	1401
+code/extHost/didLoadExtensionCode/ms-dotnettools.vscode-dotnet-pack	1651505949322	5	1406
+code/extHost/didActivateExtension/vscode.git	1651505949332	10	1416
+code/extHost/willActivateExtension/ms-dotnettools.csharp	1651505949334	2	1418
+code/extHost/willActivateExtension/ms-dotnettools.vscode-dotnet-pack	1651505949336	2	1420
+code/extHost/didActivateExtension/ms-dotnettools.vscode-dotnet-pack	1651505949412	76	1496
+code/extHost/didActivateExtension/formulahendry.auto-rename-tag	1651505949413	1	1497
+code/extHost/willLoadExtensionCode/vscode.github-authentication	1651505949436	23	1520
+code/extHost/didLoadExtensionCode/vscode.github-authentication	1651505949449	13	1533
+code/extHost/didActivateExtension/ms-dotnettools.csharp	1651505949460	11	1544
+```
+
+## Node Cached Data Stats
+
+
+### cached data used
+
+
+### cached data missed
+
+
+### cached data rejected
+
+
+### cached data created (lazy, might need refreshes)
+
+

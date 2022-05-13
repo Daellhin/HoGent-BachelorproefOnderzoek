@@ -1,0 +1,330 @@
+## System Info
+
+* Code: 1.67.0 (57fd6d0195bb9b9d1b49f6da5db789060795de47)
+* OS: win32(10.0.22616)
+* CPUs: AMD Ryzen 7 4800H with Radeon Graphics         (16 x 2895)
+* Memory(System): 15.36 GB(8.25GB free)
+* Memory(Process): 203.24 MB working set(173.25MB private, 0.35MB shared)
+* VM(likelihood): 0%
+* Initial Startup: true
+* Has 0 other windows
+* Screen Reader Active: false
+* Empty Workspace: false
+
+## Performance Marks
+
+| What                                                            | Duration | Process                   | Info                                                        |
+| --------------------------------------------------------------- | -------- | ------------------------- | ----------------------------------------------------------- |
+| start => app.isReady                                            | 93       | [main]                    | initial startup: true                                       |
+| nls:start => nls:end                                            | 1        | [main]                    | initial startup: true                                       |
+| require(main.bundle.js)                                         | 77       | [main]                    | initial startup: true                                       |
+| start crash reporter                                            | 30       | [main]                    | initial startup: true                                       |
+| serve main IPC handle                                           | 2        | [main]                    | initial startup: true                                       |
+| create window                                                   | 49       | [main]                    | initial startup: true, state: 0ms, widget: 20ms, show: 27ms |
+| app.isReady => window.loadUrl()                                 | 190      | [main]                    | initial startup: true                                       |
+| window.loadUrl() => begin to require(workbench.desktop.main.js) | 456      | [main->renderer]          | NewWindow                                                   |
+| require(workbench.desktop.main.js)                              | 368      | [renderer]                | cached data: YES, node_modules took 0ms                     |
+| wait for window config                                          | 0        | [renderer]                | -                                                           |
+| init storage (global & workspace)                               | 22       | [renderer]                | -                                                           |
+| init workspace service                                          | 56       | [renderer]                | -                                                           |
+| register extensions & spawn extension host                      | 593      | [renderer]                | -                                                           |
+| restore viewlet                                                 | 86       | [renderer]                | workbench.view.explorer                                     |
+| restore panel                                                   | 55       | [renderer]                | terminal                                                    |
+| restore & resolve visible editors                               | 435      | [renderer]                | 1: workbench.editors.files.fileEditorInput                  |
+| overall workbench load                                          | 743      | [renderer]                | -                                                           |
+| workbench ready                                                 | 1913     | [main->renderer]          | -                                                           |
+| renderer ready                                                  | 1182     | [renderer]                | -                                                           |
+| shared process connection ready                                 | 0        | [renderer->sharedprocess] | -                                                           |
+| extensions registered                                           | 2268     | [renderer]                | -                                                           |
+
+## Extension Activation Stats
+
+| Extension                               | Eager | Load Code | Call Activate | Finish Activate | Event                             | By                                      |
+| --------------------------------------- | ----- | --------- | ------------- | --------------- | --------------------------------- | --------------------------------------- |
+| vscode.debug-auto-launch                | true  | 7         | 0             | 253             | *                                 | vscode.debug-auto-launch                |
+| vscode.git                              | true  | 18        | 4             | 56              | *                                 | vscode.git                              |
+| vscode.git-base                         | true  | 8         | 0             | 253             | *                                 | vscode.git                              |
+| vscode.github                           | true  | 7         | 0             | 4               | *                                 | vscode.github                           |
+| vscode.ipynb                            | true  | 6         | 1             | 252             | *                                 | vscode.ipynb                            |
+| albert.TabOut                           | true  | 8         | 1             | 251             | *                                 | albert.TabOut                           |
+| eamodio.toggle-excluded-files           | true  | 3         | 1             | 250             | *                                 | eamodio.toggle-excluded-files           |
+| christian-kohler.path-intellisense      | true  | 33        | 1             | 249             | *                                 | christian-kohler.path-intellisense      |
+| ecmel.vscode-html-css                   | true  | 27        | 1             | 248             | *                                 | ecmel.vscode-html-css                   |
+| formulahendry.auto-close-tag            | true  | 4         | 0             | 248             | *                                 | formulahendry.auto-close-tag            |
+| formulahendry.auto-rename-tag           | true  | 14        | 4             | 605             | *                                 | formulahendry.auto-rename-tag           |
+| HaaLeo.timing                           | true  | 20        | 21            | 223             | *                                 | HaaLeo.timing                           |
+| hbenl.vscode-test-explorer              | true  | 42        | 3             | 1               | *                                 | hbenl.vscode-test-explorer              |
+| mhutchie.git-graph                      | true  | 59        | 5             | 358             | *                                 | mhutchie.git-graph                      |
+| michelemelluso.gitignore                | true  | 2         | 0             | 218             | *                                 | michelemelluso.gitignore                |
+| mightycoco.fsdeploy                     | true  | 170       | 1             | 217             | *                                 | mightycoco.fsdeploy                     |
+| ms-vscode.test-adapter-converter        | true  | 6         | 0             | 223             | *                                 | hbenl.vscode-test-explorer              |
+| vscjava.vscode-java-debug               | true  | 18        | 0             | 89              | workspaceContains:build.gradle    | vscjava.vscode-java-test                |
+| vscjava.vscode-java-dependency          | true  | 29        | 0             | 95              | workspaceContains:build.gradle    | vscjava.vscode-java-dependency          |
+| vscjava.vscode-java-pack                | true  | 29        | 18            | 601             | workspaceContains:build.gradle    | vscjava.vscode-java-pack                |
+| WakaTime.vscode-wakatime                | true  | 25        | 0             | 217             | *                                 | WakaTime.vscode-wakatime                |
+| WallabyJs.quokka-vscode                 | true  | 3         | 180           | 41              | *                                 | WallabyJs.quokka-vscode                 |
+| yzhang.markdown-all-in-one              | true  | 43        | 9             | 6               | workspaceContains:README.md       | yzhang.markdown-all-in-one              |
+| vscode.configuration-editing            | false | 11        | 0             | 3               | onLanguage:jsonc                  | vscode.configuration-editing            |
+| vscode.emmet                            | false | 8         | 3             | 58              | onStartupFinished                 | vscode.emmet                            |
+| vscode.extension-editing                | false | 13        | 0             | 4               | onLanguage:markdown               | vscode.extension-editing                |
+| vscode.github-authentication            | false | 15        | 0             | 2               | onAuthenticationRequest:github    | vscode.github-authentication            |
+| vscode.json-language-features           | false | 24        | 0             | 77              | onLanguage:jsonc                  | vscode.json-language-features           |
+| vscode.markdown-language-features       | false | 35        | 4             | 0               | onLanguage:markdown               | vscode.markdown-language-features       |
+| vscode.markdown-math                    | false | 9         | 1             | 0               | api                               | yzhang.markdown-all-in-one              |
+| vscode.merge-conflict                   | false | 4         | 0             | 58              | onStartupFinished                 | vscode.merge-conflict                   |
+| vscode.microsoft-authentication         | false | 25        | 0             | 591             | onAuthenticationRequest:microsoft | vscode.microsoft-authentication         |
+| ms-vscode-remote.remote-wsl-recommender | false | 9         | 16            | 43              | onStartupFinished                 | ms-vscode-remote.remote-wsl-recommender |
+| vscode.typescript-language-features     | false | 15        | 3             | 1               | onLanguage:jsonc                  | vscode.typescript-language-features     |
+| bierner.markdown-emoji                  | false | 4         | 0             | 0               | api                               | yzhang.markdown-all-in-one              |
+| dbaeumer.vscode-eslint                  | false | 7         | 13            | 30              | onStartupFinished                 | dbaeumer.vscode-eslint                  |
+| dsznajder.es7-react-js-snippets         | false | 344       | 0             | 30              | onStartupFinished                 | dsznajder.es7-react-js-snippets         |
+| formulahendry.code-runner               | false | 54        | 1             | 30              | onStartupFinished                 | formulahendry.code-runner               |
+| GrapeCity.gc-excelviewer                | false | 5         | 0             | 252             | onLanguage:plaintext              | GrapeCity.gc-excelviewer                |
+| Gruntfuggly.todo-tree                   | false | 18        | 28            | 2               | onStartupFinished                 | Gruntfuggly.todo-tree                   |
+| koehlma.markdown-math                   | false | 1         | 0             | 2               | api                               | yzhang.markdown-all-in-one              |
+| PKief.material-icon-theme               | false | 9         | 0             | 19              | onStartupFinished                 | PKief.material-icon-theme               |
+| ritwickdey.LiveServer                   | false | 286       | 0             | 2               | onStartupFinished                 | ritwickdey.LiveServer                   |
+
+## Raw Perf Marks: main
+
+```
+Name	Timestamp	Delta	Total
+code/timeOrigin	1652105435129	0	0
+code/didStartMain	1652105435225	96	96
+code/willStartCrashReporter	1652105435248	23	119
+code/didStartCrashReporter	1652105435278	30	149
+code/mainAppReady	1652105435318	40	189
+code/willGenerateNls	1652105435321	3	192
+code/didGenerateNls	1652105435322	1	193
+code/willLoadMainBundle	1652105435329	7	200
+code/fork/willLoadCode	1652105435350	21	221
+code/registerFilesystem/file	1652105435404	54	275
+code/didLoadMainBundle	1652105435406	2	277
+code/willStartMainServer	1652105435412	6	283
+code/didStartMainServer	1652105435414	2	285
+code/willCreateCodeWindow	1652105435456	42	327
+code/willRestoreCodeWindowState	1652105435457	1	328
+code/didRestoreCodeWindowState	1652105435457	0	328
+code/willCreateCodeBrowserWindow	1652105435457	0	328
+code/didCreateCodeBrowserWindow	1652105435477	20	348
+code/willMaximizeCodeWindow	1652105435477	0	348
+code/didMaximizeCodeWindow	1652105435504	27	375
+code/didCreateCodeWindow	1652105435505	1	376
+code/willOpenNewWindow	1652105435508	3	379
+```
+## Raw Perf Marks: renderer
+
+```
+Name	Timestamp	Delta	Total
+code/timeOrigin	1652105435509	0	0
+code/didStartRenderer	1652105435956	447	447
+code/willWaitForWindowConfig	1652105435957	1	448
+code/didWaitForWindowConfig	1652105435957	0	448
+code/willShowPartsSplash	1652105435957	0	448
+code/didShowPartsSplash	1652105435958	1	449
+code/willLoadWorkbenchMain	1652105435964	6	455
+code/didLoadWorkbenchMain	1652105436332	368	823
+code/registerFilesystem/file	1652105436333	1	824
+code/registerFilesystem/vscode-userdata	1652105436333	0	824
+code/willInitWorkspaceService	1652105436335	2	826
+code/willInitStorage	1652105436336	1	827
+code/didInitStorage	1652105436358	22	849
+code/willInitUserConfiguration	1652105436362	4	853
+code/didInitUserConfiguration	1652105436369	7	860
+code/willInitWorkspaceConfiguration	1652105436369	0	860
+code/didInitWorkspaceConfiguration	1652105436391	22	882
+code/didInitWorkspaceService	1652105436391	0	882
+code/willStartWorkbench	1652105436395	4	886
+code/LifecyclePhase/Ready	1652105436476	81	967
+code/registerFilesystem/trustedDomains	1652105436503	27	994
+code/registerFilesystem/vscode-local-history	1652105436505	2	996
+code/registerFilesystem/vscode-debug-memory	1652105436608	103	1099
+code/willRestoreEditors	1652105436703	95	1194
+code/willRestoreViewlet	1652105436710	7	1201
+code/willRestorePanel	1652105436741	31	1232
+code/didRestoreViewlet	1652105436796	55	1287
+code/didRestorePanel	1652105436796	0	1287
+code/willResolveExplorer	1652105436822	26	1313
+code/willLoadExtensions	1652105436900	78	1391
+code/didResolveExplorer	1652105437009	109	1500
+code/didRestoreEditors	1652105437138	129	1629
+code/LifecyclePhase/Restored	1652105437138	0	1629
+code/didStartWorkbench	1652105437138	0	1629
+code/didRemovePartsSplash	1652105437138	0	1629
+code/willConnectSharedProcess	1652105437168	30	1659
+code/willHandleExtensionPoints	1652105437254	86	1745
+code/didHandleExtensionPoints	1652105437488	234	1979
+code/didLoadExtensions	1652105437493	5	1984
+```
+## Raw Perf Marks: localExtHost
+
+```
+Name	Timestamp	Delta	Total
+code/timeOrigin	1652105437060	0	0
+code/fork/start	1652105437152	92	92
+code/fork/willLoadCode	1652105437179	27	119
+code/extHost/willConnectToRenderer	1652105437381	202	321
+code/extHost/didConnectToRenderer	1652105437383	2	323
+code/extHost/didWaitForInitData	1652105437924	541	864
+code/extHost/didCreateServices	1652105437939	15	879
+code/extHost/willWaitForConfig	1652105437947	8	887
+code/extHost/didWaitForConfig	1652105438018	71	958
+code/extHost/didInitAPI	1652105438018	0	958
+code/extHost/didInitProxyResolver	1652105438025	7	965
+code/extHost/ready	1652105438025	0	965
+code/extHost/willLoadExtensionCode/GrapeCity.gc-excelviewer	1652105438064	39	1004
+code/extHost/didLoadExtensionCode/GrapeCity.gc-excelviewer	1652105438069	5	1009
+code/extHost/willLoadExtensionCode/vscode.microsoft-authentication	1652105438069	0	1009
+code/extHost/didLoadExtensionCode/vscode.microsoft-authentication	1652105438094	25	1034
+code/extHost/willLoadExtensionCode/vscode.debug-auto-launch	1652105438095	1	1035
+code/extHost/didLoadExtensionCode/vscode.debug-auto-launch	1652105438102	7	1042
+code/extHost/willLoadExtensionCode/vscode.git-base	1652105438102	0	1042
+code/extHost/didLoadExtensionCode/vscode.git-base	1652105438110	8	1050
+code/extHost/willLoadExtensionCode/vscode.ipynb	1652105438111	1	1051
+code/extHost/didLoadExtensionCode/vscode.ipynb	1652105438117	6	1057
+code/extHost/willLoadExtensionCode/albert.TabOut	1652105438117	0	1057
+code/extHost/didLoadExtensionCode/albert.TabOut	1652105438125	8	1065
+code/extHost/willLoadExtensionCode/eamodio.toggle-excluded-files	1652105438126	1	1066
+code/extHost/didLoadExtensionCode/eamodio.toggle-excluded-files	1652105438129	3	1069
+code/extHost/willLoadExtensionCode/christian-kohler.path-intellisense	1652105438130	1	1070
+code/extHost/didLoadExtensionCode/christian-kohler.path-intellisense	1652105438163	33	1103
+code/extHost/willLoadExtensionCode/ecmel.vscode-html-css	1652105438163	0	1103
+code/extHost/didLoadExtensionCode/ecmel.vscode-html-css	1652105438190	27	1130
+code/extHost/willLoadExtensionCode/formulahendry.auto-close-tag	1652105438190	0	1130
+code/extHost/didLoadExtensionCode/formulahendry.auto-close-tag	1652105438194	4	1134
+code/extHost/willLoadExtensionCode/formulahendry.auto-rename-tag	1652105438195	1	1135
+code/extHost/didLoadExtensionCode/formulahendry.auto-rename-tag	1652105438209	14	1149
+code/extHost/willLoadExtensionCode/HaaLeo.timing	1652105438209	0	1149
+code/extHost/didLoadExtensionCode/HaaLeo.timing	1652105438229	20	1169
+code/extHost/willLoadExtensionCode/ms-vscode.test-adapter-converter	1652105438229	0	1169
+code/extHost/didLoadExtensionCode/ms-vscode.test-adapter-converter	1652105438235	6	1175
+code/extHost/willLoadExtensionCode/mhutchie.git-graph	1652105438236	1	1176
+code/extHost/didLoadExtensionCode/mhutchie.git-graph	1652105438295	59	1235
+code/extHost/willLoadExtensionCode/michelemelluso.gitignore	1652105438300	5	1240
+code/extHost/didLoadExtensionCode/michelemelluso.gitignore	1652105438302	2	1242
+code/extHost/willLoadExtensionCode/mightycoco.fsdeploy	1652105438303	1	1243
+code/extHost/didLoadExtensionCode/mightycoco.fsdeploy	1652105438473	170	1413
+code/extHost/willLoadExtensionCode/WakaTime.vscode-wakatime	1652105438473	0	1413
+code/extHost/didLoadExtensionCode/WakaTime.vscode-wakatime	1652105438498	25	1438
+code/extHost/willLoadExtensionCode/WallabyJs.quokka-vscode	1652105438498	0	1438
+code/extHost/didLoadExtensionCode/WallabyJs.quokka-vscode	1652105438501	3	1441
+code/extHost/willLoadExtensionCode/redhat.java	1652105438502	1	1442
+code/extHost/didLoadExtensionCode/redhat.java	1652105438549	47	1489
+code/extHost/willLoadExtensionCode/vscjava.vscode-java-dependency	1652105438550	1	1490
+code/extHost/didLoadExtensionCode/vscjava.vscode-java-dependency	1652105438579	29	1519
+code/extHost/willLoadExtensionCode/vscjava.vscode-java-pack	1652105438580	1	1520
+code/extHost/didLoadExtensionCode/vscjava.vscode-java-pack	1652105438608	28	1548
+code/extHost/willLoadExtensionCode/vscjava.vscode-java-debug	1652105438608	0	1548
+code/extHost/didLoadExtensionCode/vscjava.vscode-java-debug	1652105438626	18	1566
+code/extHost/willLoadExtensionCode/yzhang.markdown-all-in-one	1652105438626	0	1566
+code/extHost/didLoadExtensionCode/yzhang.markdown-all-in-one	1652105438669	43	1609
+code/extHost/willLoadExtensionCode/vscode.markdown-math	1652105438878	209	1818
+code/extHost/didLoadExtensionCode/vscode.markdown-math	1652105438887	9	1827
+code/extHost/willActivateExtension/GrapeCity.gc-excelviewer	1652105438888	1	1828
+code/extHost/willActivateExtension/vscode.microsoft-authentication	1652105438889	1	1829
+code/extHost/willActivateExtension/vscode.debug-auto-launch	1652105438889	0	1829
+code/extHost/willActivateExtension/vscode.git-base	1652105438889	0	1829
+code/extHost/willActivateExtension/vscode.ipynb	1652105438889	0	1829
+code/extHost/willActivateExtension/albert.TabOut	1652105438890	1	1830
+code/extHost/willActivateExtension/eamodio.toggle-excluded-files	1652105438891	1	1831
+code/extHost/willActivateExtension/christian-kohler.path-intellisense	1652105438892	1	1832
+code/extHost/willActivateExtension/ecmel.vscode-html-css	1652105438893	1	1833
+code/extHost/willActivateExtension/formulahendry.auto-close-tag	1652105438894	1	1834
+code/extHost/willActivateExtension/formulahendry.auto-rename-tag	1652105438894	0	1834
+code/extHost/willActivateExtension/HaaLeo.timing	1652105438898	4	1838
+code/extHost/willActivateExtension/ms-vscode.test-adapter-converter	1652105438919	21	1859
+code/extHost/willActivateExtension/mhutchie.git-graph	1652105438919	0	1859
+code/extHost/willActivateExtension/michelemelluso.gitignore	1652105438924	5	1864
+code/extHost/willActivateExtension/mightycoco.fsdeploy	1652105438924	0	1864
+code/extHost/willActivateExtension/WakaTime.vscode-wakatime	1652105438925	1	1865
+code/extHost/willActivateExtension/WallabyJs.quokka-vscode	1652105438925	0	1865
+code/extHost/willActivateExtension/redhat.java	1652105439105	180	2045
+code/extHost/willActivateExtension/vscjava.vscode-java-dependency	1652105439114	9	2054
+code/extHost/willActivateExtension/vscjava.vscode-java-pack	1652105439114	0	2054
+code/extHost/willActivateExtension/vscjava.vscode-java-debug	1652105439132	18	2072
+code/extHost/willActivateExtension/yzhang.markdown-all-in-one	1652105439132	0	2072
+code/extHost/didActivateExtension/GrapeCity.gc-excelviewer	1652105439160	28	2100
+code/extHost/didActivateExtension/vscode.debug-auto-launch	1652105439160	0	2100
+code/extHost/didActivateExtension/vscode.git-base	1652105439160	0	2100
+code/extHost/didActivateExtension/vscode.ipynb	1652105439160	0	2100
+code/extHost/didActivateExtension/albert.TabOut	1652105439160	0	2100
+code/extHost/didActivateExtension/eamodio.toggle-excluded-files	1652105439160	0	2100
+code/extHost/didActivateExtension/christian-kohler.path-intellisense	1652105439160	0	2100
+code/extHost/didActivateExtension/ecmel.vscode-html-css	1652105439160	0	2100
+code/extHost/didActivateExtension/formulahendry.auto-close-tag	1652105439160	0	2100
+code/extHost/didActivateExtension/HaaLeo.timing	1652105439160	0	2100
+code/extHost/didActivateExtension/ms-vscode.test-adapter-converter	1652105439160	0	2100
+code/extHost/didActivateExtension/michelemelluso.gitignore	1652105439160	0	2100
+code/extHost/didActivateExtension/mightycoco.fsdeploy	1652105439160	0	2100
+code/extHost/didActivateExtension/WakaTime.vscode-wakatime	1652105439160	0	2100
+code/extHost/didActivateExtension/WallabyJs.quokka-vscode	1652105439160	0	2100
+code/extHost/didActivateExtension/yzhang.markdown-all-in-one	1652105439160	0	2100
+code/extHost/didActivateExtension/vscjava.vscode-java-dependency	1652105439209	49	2149
+code/extHost/didActivateExtension/vscjava.vscode-java-debug	1652105439221	12	2161
+code/extHost/didActivateExtension/mhutchie.git-graph	1652105439282	61	2222
+code/extHost/willLoadExtensionCode/vscode.git	1652105439290	8	2230
+code/extHost/didLoadExtensionCode/vscode.git	1652105439308	18	2248
+code/extHost/willLoadExtensionCode/vscode.github	1652105439309	1	2249
+code/extHost/didLoadExtensionCode/vscode.github	1652105439316	7	2256
+code/extHost/willLoadExtensionCode/hbenl.vscode-test-explorer	1652105439316	0	2256
+code/extHost/didLoadExtensionCode/hbenl.vscode-test-explorer	1652105439358	42	2298
+code/extHost/willActivateExtension/vscode.markdown-math	1652105439377	19	2317
+code/extHost/didActivateExtension/vscode.markdown-math	1652105439378	1	2318
+code/extHost/didActivateExtension/vscode.microsoft-authentication	1652105439480	102	2420
+code/extHost/didActivateExtension/formulahendry.auto-rename-tag	1652105439503	23	2443
+code/extHost/willLoadExtensionCode/bierner.markdown-emoji	1652105439532	29	2472
+code/extHost/didLoadExtensionCode/bierner.markdown-emoji	1652105439536	4	2476
+code/extHost/willActivateExtension/vscode.git	1652105439536	0	2476
+code/extHost/willActivateExtension/vscode.github	1652105439540	4	2480
+code/extHost/willActivateExtension/hbenl.vscode-test-explorer	1652105439540	0	2480
+code/extHost/didActivateExtension/vscode.github	1652105439546	6	2486
+code/extHost/didActivateExtension/hbenl.vscode-test-explorer	1652105439546	0	2486
+code/extHost/willActivateExtension/bierner.markdown-emoji	1652105439582	36	2522
+code/extHost/didActivateExtension/bierner.markdown-emoji	1652105439582	0	2522
+code/extHost/didActivateExtension/vscode.git	1652105439596	14	2536
+code/extHost/willLoadExtensionCode/vscode.github-authentication	1652105439601	5	2541
+code/extHost/didLoadExtensionCode/vscode.github-authentication	1652105439616	15	2556
+code/extHost/willLoadExtensionCode/koehlma.markdown-math	1652105439617	1	2557
+code/extHost/didLoadExtensionCode/koehlma.markdown-math	1652105439618	1	2558
+code/extHost/willActivateExtension/vscode.github-authentication	1652105439646	28	2586
+code/extHost/willActivateExtension/koehlma.markdown-math	1652105439646	0	2586
+code/extHost/didActivateExtension/vscode.github-authentication	1652105439650	4	2590
+code/extHost/didActivateExtension/koehlma.markdown-math	1652105439650	0	2590
+code/extHost/didActivateExtension/vscjava.vscode-java-pack	1652105439733	83	2673
+code/extHost/willLoadExtensionCode/vscode.configuration-editing	1652105440282	549	3222
+code/extHost/didLoadExtensionCode/vscode.configuration-editing	1652105440293	11	3233
+code/extHost/willLoadExtensionCode/vscode.json-language-features	1652105440293	0	3233
+code/extHost/didLoadExtensionCode/vscode.json-language-features	1652105440317	24	3257
+code/extHost/willLoadExtensionCode/vscode.typescript-language-features	1652105440317	0	3257
+code/extHost/didLoadExtensionCode/vscode.typescript-language-features	1652105440332	15	3272
+code/extHost/willActivateExtension/vscode.configuration-editing	1652105440342	10	3282
+code/extHost/willActivateExtension/vscode.json-language-features	1652105440342	0	3282
+code/extHost/willActivateExtension/vscode.typescript-language-features	1652105440342	0	3282
+code/extHost/didActivateExtension/vscode.configuration-editing	1652105440346	4	3286
+code/extHost/didActivateExtension/vscode.typescript-language-features	1652105440346	0	3286
+code/extHost/didActivateExtension/vscode.json-language-features	1652105440419	73	3359
+code/extHost/willLoadExtensionCode/vscode.extension-editing	1652105446275	5856	9215
+code/extHost/didLoadExtensionCode/vscode.extension-editing	1652105446288	13	9228
+code/extHost/willLoadExtensionCode/vscode.markdown-language-features	1652105446289	1	9229
+code/extHost/didLoadExtensionCode/vscode.markdown-language-features	1652105446324	35	9264
+code/extHost/willActivateExtension/vscode.extension-editing	1652105446344	20	9284
+code/extHost/willActivateExtension/vscode.markdown-language-features	1652105446344	0	9284
+code/extHost/didActivateExtension/vscode.extension-editing	1652105446348	4	9288
+code/extHost/didActivateExtension/vscode.markdown-language-features	1652105446348	0	9288
+```
+
+## Node Cached Data Stats
+
+
+### cached data used
+
+
+### cached data missed
+
+
+### cached data rejected
+
+
+### cached data created (lazy, might need refreshes)
+
+

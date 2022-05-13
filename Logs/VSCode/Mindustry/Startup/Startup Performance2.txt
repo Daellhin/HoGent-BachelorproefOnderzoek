@@ -1,0 +1,164 @@
+## System Info
+
+* Code: 1.67.0 (57fd6d0195bb9b9d1b49f6da5db789060795de47)
+* OS: win32(10.0.22616)
+* CPUs: AMD Ryzen 7 4800H with Radeon Graphics         (16 x 2895)
+* Memory(System): 15.36 GB(8.02GB free)
+* Memory(Process): 189.47 MB working set(142.71MB private, 0.30MB shared)
+* VM(likelihood): 0%
+* Initial Startup: true
+* Has 0 other windows
+* Screen Reader Active: false
+* Empty Workspace: false
+
+## Performance Marks
+
+| What                                                            | Duration | Process                   | Info                                                        |
+| --------------------------------------------------------------- | -------- | ------------------------- | ----------------------------------------------------------- |
+| start => app.isReady                                            | 99       | [main]                    | initial startup: true                                       |
+| nls:start => nls:end                                            | 1        | [main]                    | initial startup: true                                       |
+| require(main.bundle.js)                                         | 79       | [main]                    | initial startup: true                                       |
+| start crash reporter                                            | 32       | [main]                    | initial startup: true                                       |
+| serve main IPC handle                                           | 3        | [main]                    | initial startup: true                                       |
+| create window                                                   | 65       | [main]                    | initial startup: true, state: 0ms, widget: 30ms, show: 34ms |
+| app.isReady => window.loadUrl()                                 | 230      | [main]                    | initial startup: true                                       |
+| window.loadUrl() => begin to require(workbench.desktop.main.js) | 539      | [main->renderer]          | NewWindow                                                   |
+| require(workbench.desktop.main.js)                              | 396      | [renderer]                | cached data: YES, node_modules took 0ms                     |
+| wait for window config                                          | 0        | [renderer]                | -                                                           |
+| init storage (global & workspace)                               | 26       | [renderer]                | -                                                           |
+| init workspace service                                          | 60       | [renderer]                | -                                                           |
+| register extensions & spawn extension host                      | 526      | [renderer]                | -                                                           |
+| restore viewlet                                                 | 99       | [renderer]                | workbench.view.explorer                                     |
+| restore panel                                                   | 65       | [renderer]                | terminal                                                    |
+| restore & resolve visible editors                               | 942      | [renderer]                | 1: workbench.editors.files.fileEditorInput                  |
+| overall workbench load                                          | 1286     | [renderer]                | -                                                           |
+| workbench ready                                                 | 2617     | [main->renderer]          | -                                                           |
+| renderer ready                                                  | 1757     | [renderer]                | -                                                           |
+| shared process connection ready                                 | 0        | [renderer->sharedprocess] | -                                                           |
+| extensions registered                                           | 2421     | [renderer]                | -                                                           |
+
+## Extension Activation Stats
+
+| Extension                           | Eager | Load Code | Call Activate | Finish Activate | Event                             | By                                  |
+| ----------------------------------- | ----- | --------- | ------------- | --------------- | --------------------------------- | ----------------------------------- |
+| vscode.debug-auto-launch            | true  | 9         | 0             | 270             | *                                 | vscode.debug-auto-launch            |
+| vscode.git                          | true  | 29        | 6             | 60              | *                                 | vscode.git                          |
+| vscode.git-base                     | true  | 9         | 0             | 270             | *                                 | vscode.git                          |
+| vscode.github                       | true  | 9         | 0             | 6               | *                                 | vscode.github                       |
+| vscode.ipynb                        | true  | 8         | 1             | 269             | *                                 | vscode.ipynb                        |
+| albert.TabOut                       | true  | 11        | 1             | 268             | *                                 | albert.TabOut                       |
+| eamodio.toggle-excluded-files       | true  | 5         | 2             | 266             | *                                 | eamodio.toggle-excluded-files       |
+| christian-kohler.path-intellisense  | true  | 48        | 2             | 264             | *                                 | christian-kohler.path-intellisense  |
+| ecmel.vscode-html-css               | true  | 27        | 0             | 264             | *                                 | ecmel.vscode-html-css               |
+| formulahendry.auto-close-tag        | true  | 4         | 0             | 264             | *                                 | formulahendry.auto-close-tag        |
+| formulahendry.auto-rename-tag       | true  | 11        | 5             | 597             | *                                 | formulahendry.auto-rename-tag       |
+| HaaLeo.timing                       | true  | 16        | 32            | 228             | *                                 | HaaLeo.timing                       |
+| hbenl.vscode-test-explorer          | true  | 40        | 5             | 2               | *                                 | hbenl.vscode-test-explorer          |
+| mhutchie.git-graph                  | true  | 63        | 6             | 341             | *                                 | mhutchie.git-graph                  |
+| michelemelluso.gitignore            | true  | 4         | 0             | 222             | *                                 | michelemelluso.gitignore            |
+| mightycoco.fsdeploy                 | true  | 193       | 1             | 221             | *                                 | mightycoco.fsdeploy                 |
+| ms-vscode.test-adapter-converter    | true  | 7         | 0             | 228             | *                                 | hbenl.vscode-test-explorer          |
+| vscjava.vscode-java-debug           | true  | 29        | 0             | 109             | workspaceContains:build.gradle    | vscjava.vscode-java-test            |
+| vscjava.vscode-java-dependency      | true  | 22        | 1             | 116             | workspaceContains:build.gradle    | vscjava.vscode-java-dependency      |
+| vscjava.vscode-java-pack            | true  | 24        | 19            | 377             | workspaceContains:build.gradle    | vscjava.vscode-java-pack            |
+| WakaTime.vscode-wakatime            | true  | 31        | 1             | 220             | *                                 | WakaTime.vscode-wakatime            |
+| WallabyJs.quokka-vscode             | true  | 4         | 175           | 49              | *                                 | WallabyJs.quokka-vscode             |
+| yzhang.markdown-all-in-one          | true  | 35        | 13            | 8               | workspaceContains:README.md       | yzhang.markdown-all-in-one          |
+| vscode.configuration-editing        | false | 7         | 0             | 2               | onLanguage:jsonc                  | vscode.configuration-editing        |
+| vscode.extension-editing            | false | 10        | 0             | 3               | onLanguage:markdown               | vscode.extension-editing            |
+| vscode.github-authentication        | false | 23        | 0             | 2               | onAuthenticationRequest:github    | vscode.github-authentication        |
+| vscode.json-language-features       | false | 21        | 0             | 32              | onLanguage:jsonc                  | vscode.json-language-features       |
+| vscode.markdown-language-features   | false | 40        | 3             | 0               | onLanguage:markdown               | vscode.markdown-language-features   |
+| vscode.markdown-math                | false | 10        | 0             | 0               | api                               | yzhang.markdown-all-in-one          |
+| vscode.microsoft-authentication     | false | 30        | 1             | 606             | onAuthenticationRequest:microsoft | vscode.microsoft-authentication     |
+| vscode.typescript-language-features | false | 18        | 2             | 1               | onLanguage:jsonc                  | vscode.typescript-language-features |
+| bierner.markdown-emoji              | false | 5         | 0             | 0               | api                               | yzhang.markdown-all-in-one          |
+| GrapeCity.gc-excelviewer            | false | 6         | 1             | 269             | onLanguage:plaintext              | GrapeCity.gc-excelviewer            |
+| koehlma.markdown-math               | false | 2         | 0             | 2               | api                               | yzhang.markdown-all-in-one          |
+
+## Raw Perf Marks: main
+
+```
+Name	Timestamp	Delta	Total
+code/timeOrigin	1652105316333	0	0
+code/didStartMain	1652105316436	103	103
+code/willStartCrashReporter	1652105316460	24	127
+code/didStartCrashReporter	1652105316492	32	159
+code/mainAppReady	1652105316535	43	202
+code/willGenerateNls	1652105316538	3	205
+code/didGenerateNls	1652105316539	1	206
+code/willLoadMainBundle	1652105316547	8	214
+code/fork/willLoadCode	1652105316567	20	234
+code/registerFilesystem/file	1652105316623	56	290
+code/didLoadMainBundle	1652105316626	3	293
+code/willStartMainServer	1652105316633	7	300
+code/didStartMainServer	1652105316636	3	303
+code/willCreateCodeWindow	1652105316695	59	362
+code/willRestoreCodeWindowState	1652105316696	1	363
+code/didRestoreCodeWindowState	1652105316696	0	363
+code/willCreateCodeBrowserWindow	1652105316696	0	363
+code/didCreateCodeBrowserWindow	1652105316726	30	393
+code/willMaximizeCodeWindow	1652105316726	0	393
+code/didMaximizeCodeWindow	1652105316760	34	427
+code/didCreateCodeWindow	1652105316760	0	427
+code/willOpenNewWindow	1652105316765	5	432
+```
+## Raw Perf Marks: renderer
+
+```
+Name	Timestamp	Delta	Total
+code/timeOrigin	1652105316766	0	0
+code/didStartRenderer	1652105317296	530	530
+code/willWaitForWindowConfig	1652105317296	0	530
+code/didWaitForWindowConfig	1652105317296	0	530
+code/willShowPartsSplash	1652105317296	0	530
+code/didShowPartsSplash	1652105317297	1	531
+code/willLoadWorkbenchMain	1652105317304	7	538
+code/didLoadWorkbenchMain	1652105317700	396	934
+code/registerFilesystem/file	1652105317701	1	935
+code/registerFilesystem/vscode-userdata	1652105317701	0	935
+code/willInitWorkspaceService	1652105317703	2	937
+code/willInitStorage	1652105317704	1	938
+code/didInitStorage	1652105317730	26	964
+code/willInitUserConfiguration	1652105317734	4	968
+code/didInitUserConfiguration	1652105317741	7	975
+code/willInitWorkspaceConfiguration	1652105317741	0	975
+code/didInitWorkspaceConfiguration	1652105317762	21	996
+code/didInitWorkspaceService	1652105317763	1	997
+code/willStartWorkbench	1652105317767	4	1001
+code/LifecyclePhase/Ready	1652105317855	88	1089
+code/registerFilesystem/trustedDomains	1652105317884	29	1118
+code/registerFilesystem/vscode-local-history	1652105317886	2	1120
+code/registerFilesystem/vscode-debug-memory	1652105318003	117	1237
+code/willRestoreEditors	1652105318111	108	1345
+code/willRestoreViewlet	1652105318120	9	1354
+code/willRestorePanel	1652105318154	34	1388
+code/didRestoreViewlet	1652105318219	65	1453
+code/didRestorePanel	1652105318219	0	1453
+code/willResolveExplorer	1652105318248	29	1482
+code/willLoadExtensions	1652105318331	83	1565
+code/didResolveExplorer	1652105318478	147	1712
+code/willHandleExtensionPoints	1652105318542	64	1776
+code/didHandleExtensionPoints	1652105318851	309	2085
+code/didLoadExtensions	1652105318857	6	2091
+code/didRestoreEditors	1652105319053	196	2287
+code/LifecyclePhase/Restored	1652105319053	0	2287
+code/didStartWorkbench	1652105319053	0	2287
+code/didRemovePartsSplash	1652105319054	1	2288
+```
+
+## Node Cached Data Stats
+
+
+### cached data used
+
+
+### cached data missed
+
+
+### cached data rejected
+
+
+### cached data created (lazy, might need refreshes)
+
+

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\lorin\OneDrive\Documents\HoGentJ3\HoGentSem2\Bachelorproef\Onderzoek\EclipseWorkspaces\Mindustry\.metadata\.plugins\org.eclipse.jdt.core
+126274605.index
+1865797976.index
+3349633321.index

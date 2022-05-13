@@ -1,0 +1,12 @@
+#
+#Mon May 09 17:08:30 CEST 2022
+derivedResources=.gradle;build;android/build;annotations/build;core/build;desktop/build;ios/build;server/build;tests/build;tools/build
+linkedResources=
+classpath=<?xml version\="1.0" encoding\="UTF-8"?>\n<classpath>\n</classpath>\n
+managedNatures=
+buildDir=build
+managedBuilders=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><commands/>
+buildScriptPath=build.gradle
+subprojectPaths=android;annotations;core;desktop;ios;server;tests;tools
+hasAutoBuildTasks=false
+gradleVersion=7.3
